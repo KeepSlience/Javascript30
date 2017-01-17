@@ -12,6 +12,7 @@
 - 动画
 
 ## 步骤
+
 1. 监听键盘事件
   - [事件类型一览表](https://developer.mozilla.org/zh-CN/docs/Web/Events)
   - `ketdown`与`keypress`均可在连续按下按键不放时持续出发事件，但存在以下区别
@@ -24,11 +25,13 @@
     - 因此如果要实现按下后连续快速播放，则需要将按下后的播放进度重置
     - 即 `audio.currentTime = 0`
     - [MDN](https://developer.mozilla.org/zh-CN/docs/Web/API/AudioContext/currentTime)
+
 2. 添加动画事件
   - 设置类名
     - [classList-张鑫](http://www.zhangxinxu.com/wordpress/2013/07/domtokenlist-html5-dom-classlist-%E7%B1%BB%E5%90%8D/)
     - [classList-MDN](https://developer.mozilla.org/zh-CN/docs/Web/API/Element/classList)
     - `add` 会检测添加的类是否已经存在于元素属性中，如果存在则会被忽略。
+
 3. 解除动画事件
   - [`Array.from()`](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/from) 方法可以将一个类数组对象或可遍历对象转换成真正的数组。
   - [`forEach()`](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach) 方法对数组的每个元素执行一次提供的函数(回调函数)。
