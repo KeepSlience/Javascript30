@@ -3,7 +3,8 @@
 ## 任务
 
 模拟一个打鼓的页面。用户在键盘上按下 ASDFGHJKL 这几个键时，页面上与字母对应的按钮变大变亮，对应的鼓点声音响起来。
-[实现效果](https://miaolegemie.github.io/Javascript30/02%20-%20JS%20+%20CSS%20Clock/)
+
+[实现效果](https://miaolegemie.github.io/Javascript30/01%20-%20JavaScript%20Drum%20Kit/)
 
 ## 任务要点
 

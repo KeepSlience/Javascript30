@@ -3,7 +3,8 @@
 ## 任务
 
 实现一个钟表的表盘，表盘上通过时针，分针，秒针来显示当前时间，并能够实时更新
-[实现效果](https://miaolegemie.github.io/Javascript30/01%20-%20JavaScript%20Drum%20Kit/)
+
+[实现效果](https://miaolegemie.github.io/Javascript30/02%20-%20JS%20+%20CSS%20Clock/)
 
 ## 任务要点
 
