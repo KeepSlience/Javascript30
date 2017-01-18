@@ -30,9 +30,29 @@
  `transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);`
 
 - [`transition-timing-function`](https://developer.mozilla.org/zh-CN/docs/Web/CSS/transition-timing-function)
--   [`timing-function`](https://developer.mozilla.org/zh-CN/docs/Web/CSS/timing-function)
+- [`timing-function`](https://developer.mozilla.org/zh-CN/docs/Web/CSS/timing-function)
 
 目的是为了模拟秒针抖动的动画
+
+### 神奇的bug
+
+观察的时候也发现了时针，分针，秒针在到达 0 的时候有跳动，究其原因，发现是从 444°(59s) → 90°(0s) 这里由于动画(0.05s)存在，出现“瞬移”
+
+解决方案
+- 在这个时候取消动画
+
+````
+if (Deg === 90) Hand.style.transition = 'all 0s';
+else Hand.style.transition = 'all 0.05s';
+````
+
+- 手动增加时间，防止出现 59s → 0s 的情况，改为 59s → 60s → 61s ……
+
+````
+secondDeg += (1 / 60) * 360;
+minDeg += ((1 / 60) / 60) * 360;
+hourDeg += (((1 / 60) / 60) / 12);
+````
 
 ### 其他
 
