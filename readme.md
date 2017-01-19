@@ -26,8 +26,8 @@ Wes Bos 推出的一个 30 天挑战。30 天完成 30 个任务。
 
 1. [x] [JavaScript Drum Kit](https://github.com/Miaolegemie/Javascript30/tree/master/01%20-%20JavaScript%20Drum%20Kit) |  [实现效果](https://miaolegemie.github.io/Javascript30/01%20-%20JavaScript%20Drum%20Kit/)
 2. [x] [JS + CSS Clock](https://github.com/Miaolegemie/Javascript30/tree/master/02%20-%20JS%20%2B%20CSS%20Clock) | [实现效果](https://miaolegemie.github.io/Javascript30/02%20-%20JS%20+%20CSS%20Clock/)
-3. [ ] CSS Variables
-4. [ ] Array Cardio, Day 1
+3. [x] [CSS Variables](https://github.com/Miaolegemie/Javascript30/tree/master/03%20-%20CSS%20Variables) | [实现效果](https://miaolegemie.github.io/Javascript30/03%20-%20CSS%20Variables/)
+4. [x] [Array Cardio, Day 1](https://github.com/Miaolegemie/Javascript30/tree/master/04%20-%20Array%20Cardio%20Day%201) | [实现效果](https://miaolegemie.github.io/Javascript30/04%20-%20Array%20Cardio%20Day%201/)
 5. [ ] Flex Panel Gallery
 6. [ ] Type Ahead
 7. [ ] Array Cardio, Day 2
