@@ -28,7 +28,7 @@ Wes Bos 推出的一个 30 天挑战。30 天完成 30 个任务。
 2. [x] [JS + CSS Clock](https://github.com/Miaolegemie/Javascript30/tree/master/02%20-%20JS%20%2B%20CSS%20Clock) | [实现效果](https://miaolegemie.github.io/Javascript30/02%20-%20JS%20+%20CSS%20Clock/)
 3. [x] [CSS Variables](https://github.com/Miaolegemie/Javascript30/tree/master/03%20-%20CSS%20Variables) | [实现效果](https://miaolegemie.github.io/Javascript30/03%20-%20CSS%20Variables/)
 4. [x] [Array Cardio, Day 1](https://github.com/Miaolegemie/Javascript30/tree/master/04%20-%20Array%20Cardio%20Day%201) | [实现效果](https://miaolegemie.github.io/Javascript30/04%20-%20Array%20Cardio%20Day%201/)
-5. [ ] Flex Panel Gallery
+5. [x] [Flex Panel Gallery](https://github.com/Miaolegemie/Javascript30/tree/master/05%20-%20Flex%20Panel%20Gallery) | [实现效果](https://miaolegemie.github.io/Javascript30/05%20-%20Flex%20Panel%20Gallery/)
 6. [ ] Type Ahead
 7. [ ] Array Cardio, Day 2
 8. [ ] Fun with HTML5 Canvas
