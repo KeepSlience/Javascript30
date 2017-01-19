@@ -39,8 +39,3 @@
   - [`transitionend`](https://developer.mozilla.org/zh-CN/docs/Web/Events/transitionend) 事件会在 CSS transition 结束后触发.
   - 为所有元素绑定 `transitionend` 事件，在触发时删除 `playing` 类
   - 由于在这个页面中触发 `transitionend` 的事件不止一个(`box-shadow`, `transform`, `border-color`,共触发12次)，因此需要添加一个判断，使得每次按键只除去一次
-
-## 疑问（已解决）
-本页面中，每次 `transitionend` 触发时间很短(0.07s)，但是如果在此时间内删除掉该样式，则会直接结束还是仍会执行？
-
-**经过测试后发现，会立即结束**
