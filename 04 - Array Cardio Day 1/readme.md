@@ -44,3 +44,10 @@
     - 建议使用点表示法
     - 方括号表示法可以 通过变量来访问属性 或 访问带有关键字或特殊符号的属性 或 在程序运行时创建和修改属性
   - [`Array.prototype.reduce()`](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce) 传入的最后一个参数为初始值，在本任务中需要传入一个空对象才可正常运行
+
+## 其他
+[Chrome DevTools](https://developer.chrome.com/devtools)
+
+以及 [chrome 插件开发](https://developer.chrome.com/extensions/getstarted)
+
+还有[中文文档](https://crxdoc-zh.appspot.com/apps/about_apps)
