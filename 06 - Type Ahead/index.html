@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Type Ahead 👀</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <form class="search-form">
+    <input type="text" class="search" placeholder="City or State">
+    <ul class="suggestions">
+      <li>Filter for a city</li>
+      <li>or a state</li>
+    </ul>
+  </form>
+<script>
+  const endpoint = 'https://gist.githubusercontent.com/Miserlou/c5cd8364bf9b2420bb29/raw/2bf258763cdddd704f8ffd3ea9a3e81d25e2c6f6/cities.json'
+  const search = document.querySelector('.search')
+  const suggestions = document.querySelector('.suggestions')
+
+  // 读取数据
+  let cities = []
+  fetch (endpoint)
+    .then (res => res.json())
+    .then (data => {
+      window.cities.push(...data)
+      console.log(data)
+    })
+    .catch (err => {
+      alter(err)
+    })
+
+  function inputChange (e) {
+    const input = e.target.value
+    const regex = new RegExp(input, 'gi')
+    const searchedCities = window.cities.filter(value => {
+      // includes 和 indexOf 都区分大小写，只有用正则
+      // return a.city.includes(input) || a.state.includes(input)
+      return value.city.match(regex) || value.state.match(regex)
+    })
+    console.log(searchedCities)
+    const display = searchedCities.map(value => {
+      const displayCity = value.city.replace(regex,`<span class="hl">${input}</span>`)
+      const displayState = value.state.replace(regex,`<span class="hl">${input}</span>`)
+      // 也可以使用正则来添加千位分隔符
+      // number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',')
+      const displayPopulation = parseInt(value.population).toLocaleString()
+      return `
+        <li>
+          <span class="name">${displayCity}, ${displayState}</span>
+          <span class="population">${displayPopulation}</span>
+        </li>
+      `
+    }).join('')
+    suggestions.innerHTML = display
+  }
+
+  search.addEventListener('input', inputChange)
+</script>
+  </body>
+</html>
