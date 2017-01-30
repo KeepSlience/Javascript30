@@ -24,22 +24,21 @@
   fetch (endpoint)
     .then (res => res.json())
     .then (data => {
-      window.cities.push(...data)
       console.log(data)
+      cities.push(...data)
     })
     .catch (err => {
-      alter(err)
+      alert(err)
     })
 
   function inputChange (e) {
     const input = e.target.value
     const regex = new RegExp(input, 'gi')
-    const searchedCities = window.cities.filter(value => {
+    const searchedCities = cities.filter(value => {
       // includes 和 indexOf 都区分大小写，只有用正则
       // return a.city.includes(input) || a.state.includes(input)
       return value.city.match(regex) || value.state.match(regex)
     })
-    console.log(searchedCities)
     const display = searchedCities.map(value => {
       const displayCity = value.city.replace(regex,`<span class="hl">${input}</span>`)
       const displayState = value.state.replace(regex,`<span class="hl">${input}</span>`)

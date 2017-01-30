@@ -41,3 +41,11 @@
     - 此方法会返回这个数字在特定语言环境下的表示字符串，默认返回默认的语言环境和默认选项的格式化字符串
     - 此处还可以使用正则 `number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',')`
     - 使用 `innerHTML` 将数据放入页面中
+
+## 注意事项
+
+`let` 和 `const` 所声明的不会出现在 `window` 对象上
+
+ES6 规定，`var` 命令和 `function` 命令声明的全局变量，属于全局对象的属性；`let` 命令、`const` 命令、`class` 命令声明的全局变量，不属于全局对象的属性。理论上是Web页面中运行的所有JS代码的外层块。
+
+[一篇博客](https://woozy.im/articles/declare-global-variables/)
