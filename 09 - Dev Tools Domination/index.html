@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Console Tricks!</title>
+</head>
+<body>
+
+  <p onClick="makeGreen()">×BREAK×DOWN×</p>
+
+  <script>
+    const dogs = [{ name: 'Snickers', age: 2 }, { name: 'hugo', age: 8 }]
+
+    function makeGreen() {
+      const p = document.querySelector('p')
+      p.style.color = '#BADA55'
+      p.style.fontSize = '50px'
+    }
+
+    // Regular
+    console.log('奇怪的任务')
+    // Interpolated
+    console.log('这是：%s', '格式化打印')
+    // Styled
+    console.log('%c为console定义样式', "color: red; font-style: italic")
+    // warning!
+    console.warn('warn')
+    // Error :|
+    console.error('error')
+    // Info
+    console.info('info')
+    // Testing
+    const p = document.querySelector('p')
+    // https://developer.mozilla.org/zh-CN/docs/Web/API/Node/contains
+    // Node.contains()返回一个布尔值来表示是否传入的节点是，该节点的子节点
+    console.assert(p.classList.contains('ouch'), '当断言结果为假的时候向控制台输出消息')
+    // clearing
+    // console.clear()
+    // Viewing DOM Elements
+    console.log(p)
+    console.dir(p)
+    // Grouping together
+    dogs.forEach(dog => {
+      console.groupCollapsed(`${dog.name}`)
+      console.log(`This is ${dog.name}`)
+      console.log(`${dog.name} is ${dog.age} years old`)
+      console.log(`${dog.name} is ${dog.age * 7} dog years old`)
+      console.groupEnd(`${dog.name}`)
+    })
+    // counting
+    console.count('Wes')
+    console.count('Wes')
+    console.count('Steve')
+    console.count('Steve')
+    console.count('Wes')
+    console.count('Steve')
+    console.count('Wes')
+    console.count('Steve')
+    console.count('Steve')
+    console.count('Steve')
+    console.count('Steve')
+    console.count('Steve')
+    // timing
+    console.time('fetching data')
+    fetch('https://api.github.com/users/wesbos')
+      .then(data => data.json())
+      .then(data => {
+        console.timeEnd('fetching data')
+        console.log(data)
+      })
+
+    console.table(dogs)
+  </script>
+</body>
+</html>
