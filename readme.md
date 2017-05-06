@@ -33,7 +33,7 @@ Wes Bos 推出的一个 30 天挑战。30 天完成 30 个任务。
 7. [x] [Array Cardio, Day 2](https://github.com/Miaolegemie/Javascript30/tree/master/07%20-%20Array%20Cardio%20Day%202) | [实现效果](https://miaolegemie.github.io/Javascript30/07%20-%20Array%20Cardio%20Day%202/)
 8. [x] [Fun with HTML5 Canvas](https://github.com/Miaolegemie/Javascript30/tree/master/08%20-%20Fun%20with%20HTML5%20Canvas) | [实现效果](https://miaolegemie.github.io/Javascript30/08%20-%20Fun%20with%20HTML5%20Canvas/)
 9. [x] [Dev Tools Domination](https://github.com/Miaolegemie/Javascript30/tree/master/09%20-%20Dev%20Tools%20Domination) | [实现效果](https://miaolegemie.github.io/Javascript30/09%20-%20Dev%20Tools%20Domination/)
-10. [x] Hold Shift and Check Checkboxes(https://github.com/Miaolegemie/Javascript30/tree/master/10%20-%20Hold%20Shift%20and%20Check%20Checkboxes) | [实现效果](https://miaolegemie.github.io/Javascript30/10%20-%20Hold%20Shift%20and%20Check%20Checkboxes/)
+10. [x] [Hold Shift and Check Checkboxes](https://github.com/Miaolegemie/Javascript30/tree/master/10%20-%20Hold%20Shift%20and%20Check%20Checkboxes) | [实现效果](https://miaolegemie.github.io/Javascript30/10%20-%20Hold%20Shift%20and%20Check%20Checkboxes/)
 11. [ ] Custom Video Player
 12. [ ] Key Sequence Detection
 13. [ ] Slide in on Scroll
